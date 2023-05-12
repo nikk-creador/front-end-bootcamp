@@ -1,0 +1,69 @@
+body::before {
+  display: block;
+  content: ' ';
+  height: 70px;
+}
+
+@media(min-width:768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+
+.main-title {
+  height: 80px;
+  width: 100%;
+}
+
+#cursor {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 5px;
+  height: 40px;
+  background-color: #fff;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#map {
+  height: 80%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media(max-width:768px) {
+  #map {
+    width: 100%;
+    height: 150px;
+  }
+
+}
+
+.container-fluid {
+  min-height: 100vh;
+}
+
+#newsletter {
+  background-color: #efefef;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: lightgrey;
+}
