@@ -1,585 +1,560 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Bootcamp</title>
-    <!-- bootstrap css -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous">
-      <!-- bootstarp icon css -->
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-<!-- map css -->
-      <link href='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css'
-      rel='stylesheet' />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-  </head>
-  <body>
-    <!----------------------- navbar  ----------------------------------->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark py-3  border-bottom border-1 border-white-subtle" id ="navbar">
-      <div class="container " >
-        <a class="navbar-brand" href="#"> <i class="bi bi-code-slash"> </i>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Open Graph Protocol meta tags -->
+  <meta property="og:title" content="Frontend developer Bootcamp">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:description"
+    content="Become a master of web development with our intensive Front-End Developer Bootcamp. ">
+  <meta property="og:image" content="https://appsgeyser.com/blog/wp-content/uploads/2020/12/app-development-concept_23-2148696303.jpg">
+
+  <meta property="og:url" content="https://development-bootcamp.netlify.app/">
+  <meta property="og:type" content="website">
+  <!-- Open Graph Protocol meta tags -->
+
+  <title>Frontend Bootcamp</title>
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- bootstarp icon css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- map css -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <!----------------------- navbar  ----------------------------------->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark py-3  border-bottom border-1 border-white-subtle"
+    id="navbar">
+    <div class="container ">
+      <a class="navbar-brand" href="#"> <i class="bi bi-code-slash"> </i>
         Frontend Bootcamp</a>
-        <button class="navbar-toggler" type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse"
-          id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto ps-5 mb-2 mb-lg-0">
-            <li class="nav-item px-3">
-              <a class="nav-link" aria-current="page"
-                href="#learn">What You'll learn</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link" href="#instructors">Instructors</a>
-            </li>
-            <!-- <li class="nav-item px-3">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto ps-5 mb-2 mb-lg-0">
+          <li class="nav-item px-3">
+            <a class="nav-link" aria-current="page" href="#learn">What You'll learn</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="#instructors">Instructors</a>
+          </li>
+          <!-- <li class="nav-item px-3">
               <a class="nav-link" href="#questions">Questions</a>
             </li> -->
-            <div class="dropdown">
-              <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                About Us
-              </a>
-            
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#modeoflearning">Mode of learning</a></li>
-                <li><a class="dropdown-item" href="#learn">Learn React</a></li>
-                <li><a class="dropdown-item" href="#questions">FaQ's</a></li>
-                <li><a class="dropdown-item" href="#contact">Contact Us</a></li>
-              </ul>
-            </div>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!----------------------- navbar ends  ----------------------------------->
-    
-    <!----------------------- main   ----------------------------------->
-    <section class="bg-dark text-light text-sm-start text-center p-5 pt-lg-5
-      p-lg-0" id="scrollup">
-      <div class="container">
-        <div class="d-sm-flex align-items-center
-          justify-content-between">
-          <div>
-            <div class="main-title mt-4">
-              <h1>Become a <br>
-                <span id="text" class="text-primary"></span></h1>
-            </div>
-            <p class="lead my-5">
-              Unleash your inner coding superhero at our Front End
-              Developer Bootcamp: Where we turn pixels
-              into magic
-            </p>
-            <!-- <p class="lead my-3">Calling all coding enthusiasts! Join us and unleash your potential!
-            </p> -->
-            <button
-            class="btn btn-primary btn-lg mr-0 my-3 "
-            data-bs-toggle="modal"
-            data-bs-target="#enroll"
-          >
-          Enroll Now
-          </button>
-          </div>
-          <img class="img-fluid w-50 d-none d-sm-block"
-            src="img/showcase.svg" alt="">
-        </div>
-      </div>
-    </section>
+          <div class="dropdown">
+            <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+            </a>
 
-    <!------------------------------------ main end ------------------------------------------------->
-    <!----------------------------------newsletter starts ----------------------------------------------->
-    <section  id="newsletter" class="p-4">
-      <div class="container p-3">
-        <div class="d-md-flex justify-content-between
-          align-items-center">
-          <h3 class="mb-3 mb-md-0">
-            Sign up for newsletter
-          </h3>
-          <div class="input-group news-input">
-            <input type="text" class="form-control"
-              placeholder="Enter Email">
-            <button class="btn btn-dark btn-lg" type="button">Sign
-            up</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!---------------------------------------------------- newsletter end ---------------------------------------->
-  
-    <!------------------------------------------------- learning  start ------------------------------------------>
-    <section id="modeoflearning"class="p-5">
-      <div class="container">
-        <h2 class="text-center mb-5">Interactive  <span class="text-primary">Learning</span></h2>
-        <div class="row text-center g-4">
-          <div class="col-md">
-            <div class="card bg-dark text-light">
-              <div class="h1"><i class="bi bi-laptop"></i></div>
-              <div class="card-body">
-                <h5 class="card-title mb-2">Virtual</h5>
-                <p class="card-text">Some quick example text to
-                  build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#" class="btn btn-light">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="card">
-              <div class="h1"><i class="bi bi-person-square"></i></div>
-              <div class="card-body">
-                <h5 class="card-title mb-2">Hybrid</h5>
-                <p class="card-text">Some quick example text to
-                  build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#" class="btn btn-dark">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="card bg-dark text-light">
-              <div class="h1"><i class="bi bi-people"></i></div>
-              <div class="card-body">
-                <h5 class="card-title mb-2">In Person</h5>
-                <p class="card-text">Some quick example text to
-                  build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#" class="btn btn-light">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--------------------------------------- learning end --------------------------------------->
-
-    <!--------------------------------------- fundamentals start --------------------------------------->
-    <section class="p-5" id="learn">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md">
-            <img class="img-fluid" src="img/fundamentals.jpg" alt=""
-              srcset="">
-          </div>
-          <div class="col-md p-5">
-             <h2>Learn The <span class="text-primary">Fundamentals</span></h2>
-            <p class="lead">
-              Lorem ipsum dolor sit amet. Eum voluptas obcaecati
-              velit? Lorem ipsum dolor sit.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Eos perferendis voluptas mollitia
-              magni officia ex nisi Lorem ipsum dolor sit amet.
-              dolor dolorem aliquid maxime!
-            </p>
-            <a href="" class="btn btn-dark mt-3"> <i class="bi
-              bi-chevron-right"></i> Read More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-     <!--------------------------------------- fundamentals end --------------------------------------->
-
-     <!--------------------------------------- react start --------------------------------------->
-    <section class="p-5 bg-dark" id="learn">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md text-light p-5">
-            <h2>Learn <span class="text-primary">React</span></h2>
-            <p class="lead t">
-              Lorem ipsum dolor sit amet. Eum voluptas obcaecati
-              velit? Lorem ipsum dolor sit.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consecs voluptas
-              mollitia magni officia ex nisi Lorem ipsum dolor
-              sit amet. dolor dolorem aliquid maxime!
-            </p>
-            <a href="" class="btn btn-light mt-3"> <i class="bi
-              bi-chevron-right"></i> Read More</a>
-          </div>
-          <div class="col-md">
-            <img class="img-fluid" src="img/react.svg" alt=""
-              srcset="">
-          </div>
-        </div>
-      </div>
-    </section>
-    
-     <!--------------------------------------- react end --------------------------------------->
-     
-     <!--------------------------------------- programming start--------------------------------------->
-    <section class="p-5" id="learn">
-        <div class="container">
-          <div class="row align-items-center justify-content-between">
-            <div class="col-md">
-              <img class="img-fluid" src="img/programming.jpg" alt=""
-                srcset="">
-            </div>
-            
-            <div class="col-md p-5">
-              <h2>Learn the  <span class="text-primary">Magic Of Web</span> </h2>
-              <p class="lead">
-                Lorem ipsum dolor sit amet. Eum voluptas obcaecati
-                velit? Lorem ipsum dolor sit.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit. Eos perferendis voluptas mollitia
-                magni officia ex nisi Lorem ipsum dolor sit amet.
-                dolor dolorem aliquid maxime!
-              </p>
-              <a href="" class="btn btn-dark mt-3"> <i class="bi
-                bi-chevron-right"></i> Read More</a>
-            </div>
-          </div>
-        </div>
-      </section>
-     <!--------------------------------------- Programming end --------------------------------------->
-
-     <!--------------------------------------- react start --------------------------------------->
-     <section class="p-5 bg-dark" id="learn">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md text-light p-5">
-            <h2>Learn <span class="text-primary">React</span></h2>
-            <p class="lead t">
-              Lorem ipsum dolor sit amet. Eum voluptas obcaecati
-              velit? Lorem ipsum dolor sit.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consecs voluptas
-              mollitia magni officia ex nisi Lorem ipsum dolor
-              sit amet. dolor dolorem aliquid maxime!
-            </p>
-            <a href="" class="btn btn-light mt-3"> <i class="bi
-              bi-chevron-right"></i> Read More</a>
-          </div>
-          <div class="col-md">
-            <img class="img-fluid" src="img/react.svg" alt=""
-              srcset="">
-          </div>
-        </div>
-      </div>
-    </section>
-     <!--------------------------------------- react end --------------------------------------->
-     
-     <!--------------------------------------- FaQ start --------------------------------------->
-    <section id="questions" class="p-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Frequent <span class="text-primary">Asked Questions</span> </h2>
-        <div class="accordion accordion-flush" id="questions">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed"
-                type="button" data-bs-toggle="collapse"
-                data-bs-target="#question-one">
-              Where are we located
-              </button>
-            </h2>
-            <div id="question-one" class="accordion-collapse
-              collapse" data-bs-parent="#questions">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quam in, illo ea fugit libero
-                eligendi ducimus, veniam minus necessitatibus
-                soluta, nesciunt temporibus quas facere
-                numquam?
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed"
-                type="button" data-bs-toggle="collapse"
-                data-bs-target="#question-two">
-              How much does the course cost ?
-              </button>
-            </h2>
-            <div id="question-two" class="accordion-collapse
-              collapse" data-bs-parent="#questions">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quam in, illo ea fugit libero
-                eligendi ducimus, veniam minus necessitatibus
-                soluta, nesciunt temporibus quas facere
-                numquam?
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed"
-                type="button" data-bs-toggle="collapse"
-                data-bs-target="#question-three">
-              What prerequisites are required for the
-              course/technology.
-              </button>
-            </h2>
-            <div id="question-three" class="accordion-collapse
-              collapse" data-bs-parent="#questions">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quam in, illo ea fugit libero
-                eligendi ducimus, veniam minus necessitatibus
-                soluta, nesciunt temporibus quas facere
-                numquam?
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed"
-                type="button" data-bs-toggle="collapse"
-                data-bs-target="#question-four">
-              Current job/Internships opening
-              </button>
-            </h2>
-            <div id="question-four" class="accordion-collapse
-              collapse" data-bs-parent="#questions">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quam in, illo ea fugit libero
-                eligendi ducimus, veniam minus necessitatibus
-                soluta, nesciunt temporibus quas facere
-                numquam?
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-     <!--------------------------------------- FaQ end --------------------------------------->
-
-     <!--------------------------------------- instructor start --------------------------------------->
-    <section id="instructors" class="p-5">
-      <div class="container">
-        <h2 class="text-center text-dark">
-          Our <span class="text-primary">Instructors</span> 
-        </h2>
-        <p class="lead mb-5 text-center text-dark fw-bold">
-          Our instructors all have 5+ years working as a web developer
-          in the industry
-        </p>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <img src="img/profile-pic.png" class="rounded-circle
-                m-auto pt-2 w-50" alt="">
-              <div class="card-body text-center">
-                <h5 class="card-title mb-3">Naitik Bhavsar</h5>
-                <p class="card-text">Some quick example text to
-                  build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <div>
-                  <a href="#"> <i class="bi bi-linkedin lead
-                    text-primary"></i></a>
-                    <a
-                    href="https://www.linkedin.com/in/naitik-bhavsar-b385051b0/">
-                  <i class="bi bi-facebook lead
-                    text-primary"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <img src="img/profile-pic.png" class="rounded-circle
-                m-auto pt-2 w-50" alt="">
-              <div class="card-body text-center">
-                <h5 class="card-title mb-3">Naitik Bhavsar</h5>
-                <p class="card-text">Some quick example text to
-                  build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <div>
-                  <a href="#"> <i class="bi bi-linkedin lead
-                    text-primary"></i></a>
-                    <a
-                    href="https://www.linkedin.com/in/naitik-bhavsar-b385051b0/">
-                  <i class="bi bi-instagram lead
-                    text-primary"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <img src="img/profile-pic.png" class="rounded-circle
-                m-auto pt-2 w-50" alt="">
-              <div class="card-body text-center">
-                <h5 class="card-title mb-3">Naitik Bhavsar</h5>
-                <p class="card-text">Some quick example text to
-                  build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <div>
-                  <a href="#"> <i class="bi bi-linkedin lead
-                    text-primary"></i></a>
-                    <a
-                    href="https://www.linkedin.com/in/naitik-bhavsar-b385051b0/">
-                  <i class="bi bi-github lead
-                    text-primary"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <img src="img/profile-pic.png" class="rounded-circle
-                m-auto pt-2 w-50" alt="">
-              <div class="card-body text-center">
-                <h5 class="card-title mb-3">Naitik Bhavsar</h5>
-                <p class="card-text">Some quick example text to
-                  build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <div>
-                  <a
-                    href="https://www.linkedin.com/in/naitik-bhavsar-b385051b0/">
-                  <i class="bi bi-linkedin lead
-                    text-primary"></i></a>
-                    <a
-                    href="https://www.linkedin.com/in/naitik-bhavsar-b385051b0/">
-                  <i class="bi bi-twitter lead
-                    text-primary"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-     <!--------------------------------------- instructor end --------------------------------------->
-
-     <!--------------------------------------- contact start --------------------------------------->
-    <section id="contact" class="p-5 bg-light">
-      <div class="container">
-        <div class="row ">
-          <div class="col-md text-start">
-            <h2 class="text-center mb-3"> <span class="">Contact Info <i class="bi bi-telephone text-primary"></i> </span> </h2>
-            <ul class="list-group list-group-flush lead">
-              <li class="list-group-item text-bg-light">
-                <span class="fw-bold">Main Location:</span>
-                Navsari
-              </li>
-              <li class="list-group-item text-bg-light">
-                <span class="fw-bold">Enrollment Phone:</span>
-                96969-96969
-              </li>
-              <li class="list-group-item text-bg-light">
-                <span class="fw-bold">Enrollment Email:</span>
-                enroll@frontend
-              </li>
-              
-              <li class="list-group-item text-bg-light">
-                <span class="fw-bold">Career Email:</span>
-                career@frontend
-              </li>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#modeoflearning">Mode of learning</a></li>
+              <li><a class="dropdown-item" href="#learn">Learn React</a></li>
+              <li><a class="dropdown-item" href="#questions">FaQ's</a></li>
+              <li><a class="dropdown-item" href="#contact">Contact Us</a></li>
             </ul>
           </div>
-          <div class="col-md mb-4 text-start">
-            <h2  class="p-2 ">Our Location <i class="bi bi-geo-alt text-danger"></i> </h2>
-            <div id="map"></div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!----------------------- navbar ends  ----------------------------------->
+
+  <!----------------------- main   ----------------------------------->
+  <section class="bg-dark text-light text-sm-start text-center p-5 pt-lg-5
+      p-lg-0" id="scrollup">
+    <div class="container">
+      <div class="d-sm-flex align-items-center
+          justify-content-between">
+        <div>
+          <div class="main-title mt-4">
+            <h1>Become a <br>
+              <span id="text" class="text-primary"></span>
+            </h1>
           </div>
+          <p class="lead my-5">
+            Unleash your inner coding superhero at our Front End
+            Developer Bootcamp: Where we turn pixels
+            into magic
+          </p>
+          <!-- <p class="lead my-3">Calling all coding enthusiasts! Join us and unleash your potential!
+            </p> -->
+          <button class="btn btn-primary btn-lg mr-0 my-3 " data-bs-toggle="modal" data-bs-target="#enroll">
+            Enroll Now
+          </button>
+        </div>
+        <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!------------------------------------ main end ------------------------------------------------->
+  <!----------------------------------newsletter starts ----------------------------------------------->
+  <section id="newsletter" class="p-4">
+    <div class="container p-3">
+      <div class="d-md-flex justify-content-between
+          align-items-center">
+        <h3 class="mb-3 mb-md-0">
+          Sign up for newsletter
+        </h3>
+        <div class="input-group news-input">
+          <input type="text" class="form-control" placeholder="Enter Email">
+          <button class="btn btn-dark btn-lg" type="button">Sign
+            up</button>
         </div>
       </div>
-    </section>
-     <!--------------------------------------- contact end --------------------------------------->
-   
-     <!--------------------------------------- footer start --------------------------------------->
-    <section class="bg-dark text-light p-2 text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md offset-md-5 mb-auto">
-            <p class="love">Developed with <i class="bi bi-heart"></i> by Naitik</p>
-          </div>
-          <div class="col-md offset-md-2 mb-auto">
-            <a   class="text-bg-primary" style="border: 2px solid white; border-radius: 50px;padding: 8px;text-align: center;" href="#scrollup" > <i  class=" bi bi-arrow-up lead fw-bold  align-items-center justify-content-center" style="font-size: 1.5rem;"></i>  </a>      
+    </div>
+  </section>
+  <!---------------------------------------------------- newsletter end ---------------------------------------->
+
+  <!------------------------------------------------- learning  start ------------------------------------------>
+  <section id="modeoflearning" class="p-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Interactive <span class="text-primary">Learning</span></h2>
+      <div class="row text-center g-4">
+        <div class="col-md">
+          <div class="card bg-dark text-light">
+            <div class="h1"><i class="bi bi-laptop"></i></div>
+            <div class="card-body">
+              <h5 class="card-title mb-2">Virtual</h5>
+              <p class="card-text">Some quick example text to
+                build on the card title and make up the bulk
+                of the card's content.
+              </p>
+              <a href="#" class="btn btn-light">Go somewhere</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-         <!--------------------------------------- Footer end --------------------------------------->
-
-     <!--------------------------------------------modal --------------------------->
-
-    <div
-      class="modal fade"
-      id="enroll"
-      tabindex="-1"
-      aria-labelledby="enrollLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="enrollLabel">Enrollment Form</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+        <div class="col-md">
+          <div class="card">
+            <div class="h1"><i class="bi bi-person-square"></i></div>
+            <div class="card-body">
+              <h5 class="card-title mb-2">Hybrid</h5>
+              <p class="card-text">Some quick example text to
+                build on the card title and make up the bulk
+                of the card's content.
+              </p>
+              <a href="#" class="btn btn-dark">Go somewhere</a>
+            </div>
           </div>
-          <div class="modal-body">
-            <p class="lead">Fill out this form and we will get back to you</p>
-            <form>
-              <div class="mb-3">
-                <label for="first-name" class="col-form-label">
-                  First Name:
-                </label>
-                <input type="text" class="form-control" id="first-name" />
-              </div>
-              <div class="mb-3">
-                <label for="last-name" class="col-form-label">Last Name:</label>
-                <input type="text" class="form-control" id="last-name" />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="col-form-label">Email:</label>
-                <input type="email" class="form-control" id="email" />
-              </div>
-              <div class="mb-3">
-                <label for="phone" class="col-form-label">Phone:</label>
-                <input type="tel" class="form-control" id="phone" />
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="col-md">
+          <div class="card bg-dark text-light">
+            <div class="h1"><i class="bi bi-people"></i></div>
+            <div class="card-body">
+              <h5 class="card-title mb-2">In Person</h5>
+              <p class="card-text">Some quick example text to
+                build on the card title and make up the bulk
+                of the card's content.
+              </p>
+              <a href="#" class="btn btn-light">Go somewhere</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"></script>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
-    <script src="app.js"></script>
-  </body>
+  <!--------------------------------------- learning end --------------------------------------->
+
+  <!--------------------------------------- fundamentals start --------------------------------------->
+  <section class="p-5" id="learn">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md">
+          <img class="img-fluid" src="img/fundamentals.jpg" alt="" srcset="">
+        </div>
+        <div class="col-md p-5">
+          <h2>Learn The <span class="text-primary">Fundamentals</span></h2>
+          <p class="lead">
+            Lorem ipsum dolor sit amet. Eum voluptas obcaecati
+            velit? Lorem ipsum dolor sit.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Eos perferendis voluptas mollitia
+            magni officia ex nisi Lorem ipsum dolor sit amet.
+            dolor dolorem aliquid maxime!
+          </p>
+          <a href="" class="btn btn-dark mt-3"> <i class="bi
+              bi-chevron-right"></i> Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--------------------------------------- fundamentals end --------------------------------------->
+
+  <!--------------------------------------- react start --------------------------------------->
+  <section class="p-5 bg-dark" id="learn">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md text-light p-5">
+          <h2>Learn <span class="text-primary">React</span></h2>
+          <p class="lead t">
+            Lorem ipsum dolor sit amet. Eum voluptas obcaecati
+            velit? Lorem ipsum dolor sit.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consecs voluptas
+            mollitia magni officia ex nisi Lorem ipsum dolor
+            sit amet. dolor dolorem aliquid maxime!
+          </p>
+          <a href="" class="btn btn-light mt-3"> <i class="bi
+              bi-chevron-right"></i> Read More</a>
+        </div>
+        <div class="col-md">
+          <img class="img-fluid" src="img/react.svg" alt="" srcset="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--------------------------------------- react end --------------------------------------->
+
+  <!--------------------------------------- programming start--------------------------------------->
+  <section class="p-5" id="learn">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md">
+          <img class="img-fluid" src="img/programming.jpg" alt="" srcset="">
+        </div>
+
+        <div class="col-md p-5">
+          <h2>Learn the <span class="text-primary">Magic Of Web</span> </h2>
+          <p class="lead">
+            Lorem ipsum dolor sit amet. Eum voluptas obcaecati
+            velit? Lorem ipsum dolor sit.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Eos perferendis voluptas mollitia
+            magni officia ex nisi Lorem ipsum dolor sit amet.
+            dolor dolorem aliquid maxime!
+          </p>
+          <a href="" class="btn btn-dark mt-3"> <i class="bi
+                bi-chevron-right"></i> Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--------------------------------------- Programming end --------------------------------------->
+
+  <!--------------------------------------- react start --------------------------------------->
+  <section class="p-5 bg-dark" id="learn">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md text-light p-5">
+          <h2>Learn <span class="text-primary">React</span></h2>
+          <p class="lead t">
+            Lorem ipsum dolor sit amet. Eum voluptas obcaecati
+            velit? Lorem ipsum dolor sit.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consecs voluptas
+            mollitia magni officia ex nisi Lorem ipsum dolor
+            sit amet. dolor dolorem aliquid maxime!
+          </p>
+          <a href="" class="btn btn-light mt-3"> <i class="bi
+              bi-chevron-right"></i> Read More</a>
+        </div>
+        <div class="col-md">
+          <img class="img-fluid" src="img/react.svg" alt="" srcset="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--------------------------------------- react end --------------------------------------->
+
+  <!--------------------------------------- FaQ start --------------------------------------->
+  <section id="questions" class="p-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Frequent <span class="text-primary">Asked Questions</span> </h2>
+      <div class="accordion accordion-flush" id="questions">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-one">
+              Where are we located
+            </button>
+          </h2>
+          <div id="question-one" class="accordion-collapse
+              collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quam in, illo ea fugit libero
+              eligendi ducimus, veniam minus necessitatibus
+              soluta, nesciunt temporibus quas facere
+              numquam?
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-two">
+              How much does the course cost ?
+            </button>
+          </h2>
+          <div id="question-two" class="accordion-collapse
+              collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quam in, illo ea fugit libero
+              eligendi ducimus, veniam minus necessitatibus
+              soluta, nesciunt temporibus quas facere
+              numquam?
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-three">
+              What prerequisites are required for the
+              course/technology.
+            </button>
+          </h2>
+          <div id="question-three" class="accordion-collapse
+              collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quam in, illo ea fugit libero
+              eligendi ducimus, veniam minus necessitatibus
+              soluta, nesciunt temporibus quas facere
+              numquam?
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-four">
+              Current job/Internships opening
+            </button>
+          </h2>
+          <div id="question-four" class="accordion-collapse
+              collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quam in, illo ea fugit libero
+              eligendi ducimus, veniam minus necessitatibus
+              soluta, nesciunt temporibus quas facere
+              numquam?
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--------------------------------------- FaQ end --------------------------------------->
+
+  <!--------------------------------------- instructor start --------------------------------------->
+  <section id="instructors" class="p-5">
+    <div class="container">
+      <h2 class="text-center text-dark">
+        Our <span class="text-primary">Instructors</span>
+      </h2>
+      <p class="lead mb-5 text-center text-dark fw-bold">
+        Our instructors all have 5+ years working as a web developer
+        in the industry
+      </p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <img src="img/profile-pic.png" class="rounded-circle
+                m-auto pt-2 w-50" alt="">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-3">Naitik Bhavsar</h5>
+              <p class="card-text">Some quick example text to
+                build on the card title and make up the bulk
+                of the card's content.
+              </p>
+              <div>
+                <a href="#"> <i class="bi bi-linkedin lead
+                    text-primary"></i></a>
+                <a href="https://www.linkedin.com/in/naitik-bhavsar-b385051b0/">
+                  <i class="bi bi-facebook lead
+                    text-primary"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <img src="img/profile-pic.png" class="rounded-circle
+                m-auto pt-2 w-50" alt="">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-3">Naitik Bhavsar</h5>
+              <p class="card-text">Some quick example text to
+                build on the card title and make up the bulk
+                of the card's content.
+              </p>
+              <div>
+                <a href="#"> <i class="bi bi-linkedin lead
+                    text-primary"></i></a>
+                <a href="https://www.linkedin.com/in/naitik-bhavsar-b385051b0/">
+                  <i class="bi bi-instagram lead
+                    text-primary"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <img src="img/profile-pic.png" class="rounded-circle
+                m-auto pt-2 w-50" alt="">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-3">Naitik Bhavsar</h5>
+              <p class="card-text">Some quick example text to
+                build on the card title and make up the bulk
+                of the card's content.
+              </p>
+              <div>
+                <a href="#"> <i class="bi bi-linkedin lead
+                    text-primary"></i></a>
+                <a href="https://www.linkedin.com/in/naitik-bhavsar-b385051b0/">
+                  <i class="bi bi-github lead
+                    text-primary"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <img src="img/profile-pic.png" class="rounded-circle
+                m-auto pt-2 w-50" alt="">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-3">Naitik Bhavsar</h5>
+              <p class="card-text">Some quick example text to
+                build on the card title and make up the bulk
+                of the card's content.
+              </p>
+              <div>
+                <a href="https://www.linkedin.com/in/naitik-bhavsar-b385051b0/">
+                  <i class="bi bi-linkedin lead
+                    text-primary"></i></a>
+                <a href="https://www.linkedin.com/in/naitik-bhavsar-b385051b0/">
+                  <i class="bi bi-twitter lead
+                    text-primary"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--------------------------------------- instructor end --------------------------------------->
+
+  <!--------------------------------------- contact start --------------------------------------->
+  <section id="contact" class="p-5 bg-light">
+    <div class="container">
+      <div class="row ">
+        <div class="col-md text-start">
+          <h2 class="text-center mb-3"> <span class="">Contact Info <i class="bi bi-telephone text-primary"></i> </span>
+          </h2>
+          <ul class="list-group list-group-flush lead">
+            <li class="list-group-item text-bg-light">
+              <span class="fw-bold">Main Location:</span>
+              Navsari
+            </li>
+            <li class="list-group-item text-bg-light">
+              <span class="fw-bold">Enrollment Phone:</span>
+              96969-96969
+            </li>
+            <li class="list-group-item text-bg-light">
+              <span class="fw-bold">Enrollment Email:</span>
+              enroll@frontend
+            </li>
+
+            <li class="list-group-item text-bg-light">
+              <span class="fw-bold">Career Email:</span>
+              career@frontend
+            </li>
+          </ul>
+        </div>
+        <div class="col-md mb-4 text-start">
+          <h2 class="p-2 ">Our Location <i class="bi bi-geo-alt text-danger"></i> </h2>
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--------------------------------------- contact end --------------------------------------->
+
+  <!--------------------------------------- footer start --------------------------------------->
+  <section class="bg-dark text-light p-2 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md offset-md-5 mb-auto">
+          <p class="love">Developed with <i class="bi bi-heart"></i> by Naitik</p>
+        </div>
+        <div class="col-md offset-md-2 mb-auto">
+          <a class="text-bg-primary"
+            style="border: 2px solid white; border-radius: 50px;padding: 8px;text-align: center;" href="#scrollup"> <i
+              class=" bi bi-arrow-up lead fw-bold  align-items-center justify-content-center"
+              style="font-size: 1.5rem;"></i> </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--------------------------------------- Footer end --------------------------------------->
+
+  <!--------------------------------------------modal --------------------------->
+
+  <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="enrollLabel">Enrollment Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">Fill out this form and we will get back to you</p>
+          <form>
+            <div class="mb-3">
+              <label for="first-name" class="col-form-label">
+                First Name:
+              </label>
+              <input type="text" class="form-control" id="first-name" />
+            </div>
+            <div class="mb-3">
+              <label for="last-name" class="col-form-label">Last Name:</label>
+              <input type="text" class="form-control" id="last-name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="col-form-label">Email:</label>
+              <input type="email" class="form-control" id="email" />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="col-form-label">Phone:</label>
+              <input type="tel" class="form-control" id="phone" />
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
+  <script src="app.js"></script>
+</body>
+
 </html>
