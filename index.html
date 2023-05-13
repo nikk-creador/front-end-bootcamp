@@ -21,7 +21,7 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   </head>
   <body>
-
+<section id="maincontainer">
     <!----------------------- navbar  ----------------------------------->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark py-3  border-bottom border-1 border-white-subtle" id ="navbar">
       <div class="container " >
@@ -42,11 +42,23 @@
                 href="#learn">What You'll learn</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#questions">Questions</a>
-            </li>
-            <li class="nav-item px-3">
               <a class="nav-link" href="#instructors">Instructors</a>
             </li>
+            <!-- <li class="nav-item px-3">
+              <a class="nav-link" href="#questions">Questions</a>
+            </li> -->
+            <div class="dropdown">
+              <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                About Us
+              </a>
+            
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#modeoflearning">Mode of learning</a></li>
+                <li><a class="dropdown-item" href="#learn">Learn React</a></li>
+                <li><a class="dropdown-item" href="#questions">FaQ's</a></li>
+                <li><a class="dropdown-item" href="#contact">Contact Us</a></li>
+              </ul>
+            </div>
           </ul>
         </div>
       </div>
@@ -59,7 +71,7 @@
         <div class="d-sm-flex align-items-center
           justify-content-between">
           <div>
-            <div class="main-title">
+            <div class="main-title mt-4">
               <h1>Become a <br>
                 <span id="text" class="text-primary"></span></h1>
             </div>
@@ -71,7 +83,7 @@
             <p class="lead my-3">Calling all coding enthusiasts! Join us and unleash your potential!
             </p>
             <button
-            class="btn btn-primary btn-lg m-3"
+            class="btn btn-primary btn-lg mr-0 my-3 "
             data-bs-toggle="modal"
             data-bs-target="#enroll"
           >
@@ -83,6 +95,9 @@
         </div>
       </div>
     </section>
+
+
+
     <!------------------------------------ main end ------------------------------------------------->
     <!----------------------------------newsletter starts ----------------------------------------------->
     <section  id="newsletter" class="p-4">
@@ -102,10 +117,10 @@
       </div>
     </section>
     <!---------------------------------------------------- newsletter end ---------------------------------------->
-
+  </section>  <!-- main container 100vh -->
 
     <!------------------------------------------------- learning  start ------------------------------------------>
-    <section class="p-5">
+    <section id="modeoflearning"class="p-5">
       <div class="container">
         <h2 class="text-center mb-5">Interactive  <span class="text-primary">Learning</span></h2>
         <div class="row text-center g-4">
@@ -373,7 +388,7 @@
           <div class="col-md-6 col-lg-3">
             <div class="card bg-light">
               <img src="img/profile-pic.png" class="rounded-circle
-                m-auto w-50" alt="">
+                m-auto pt-2 w-50" alt="">
               <div class="card-body text-center">
                 <h5 class="card-title mb-3">Naitik Bhavsar</h5>
                 <p class="card-text">Some quick example text to
@@ -394,7 +409,7 @@
           <div class="col-md-6 col-lg-3">
             <div class="card bg-light">
               <img src="img/profile-pic.png" class="rounded-circle
-                m-auto w-50" alt="">
+                m-auto pt-2 w-50" alt="">
               <div class="card-body text-center">
                 <h5 class="card-title mb-3">Naitik Bhavsar</h5>
                 <p class="card-text">Some quick example text to
@@ -415,7 +430,7 @@
           <div class="col-md-6 col-lg-3">
             <div class="card bg-light">
               <img src="img/profile-pic.png" class="rounded-circle
-                m-auto w-50" alt="">
+                m-auto pt-2 w-50" alt="">
               <div class="card-body text-center">
                 <h5 class="card-title mb-3">Naitik Bhavsar</h5>
                 <p class="card-text">Some quick example text to
@@ -436,7 +451,7 @@
           <div class="col-md-6 col-lg-3">
             <div class="card bg-light">
               <img src="img/profile-pic.png" class="rounded-circle
-                m-auto w-50" alt="">
+                m-auto pt-2 w-50" alt="">
               <div class="card-body text-center">
                 <h5 class="card-title mb-3">Naitik Bhavsar</h5>
                 <p class="card-text">Some quick example text to
@@ -468,23 +483,23 @@
       <div class="container">
         <div class="row ">
           <div class="col-md text-start">
-            <h2 class="text-center mb-3"> <span class="text-primary">Contact Info <i class="bi bi-telephone"></i> </span> </h2>
+            <h2 class="text-center mb-3"> <span class="">Contact Info <i class="bi bi-telephone text-primary"></i> </span> </h2>
             <ul class="list-group list-group-flush lead">
-              <li class="list-group-item">
+              <li class="list-group-item text-bg-light">
                 <span class="fw-bold">Main Location:</span>
                 Navsari
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item text-bg-light">
                 <span class="fw-bold">Enrollment Phone:</span>
                 96969-96969
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item text-bg-light">
                 <span class="fw-bold">Enrollment Email:</span>
                 
                 enroll@frontend
               </li>
               
-              <li class="list-group-item">
+              <li class="list-group-item text-bg-light">
                 <span class="fw-bold">Career Email:</span>
                 
                 career@frontend
@@ -492,7 +507,7 @@
             </ul>
           </div>
           <div class="col-md mb-4 text-start">
-            <h2  class="p-2 text-danger">Our Location <i class="bi bi-geo-alt"></i> </h2>
+            <h2  class="p-2 ">Our Location <i class="bi bi-geo-alt text-danger"></i> </h2>
             <div id="map"></div>
           </div>
         </div>
@@ -510,7 +525,7 @@
             <p class="love">Developed with <i class="bi bi-heart"></i> by Naitik</p>
           </div>
           <div class="col-md offset-md-2 mb-auto">
-            <a  style="border: 2px solid white; border-radius: 50px;padding: 8px;text-align: center;" href="#scrollup" > <i  class="bi bi-arrow-up lead fw-bold  align-items-center justify-content-center" style="font-size: 1.5rem;"></i>  </a>      
+            <a   class="text-bg-primary" style="border: 2px solid white; border-radius: 50px;padding: 8px;text-align: center;" href="#scrollup" > <i  class=" bi bi-arrow-up lead fw-bold  align-items-center justify-content-center" style="font-size: 1.5rem;"></i>  </a>      
           </div>
         </div>
       </div>
