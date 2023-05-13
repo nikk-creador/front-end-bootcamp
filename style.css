@@ -67,10 +67,3 @@ body::before {
 .nav-link:hover {
   color: lightgrey;
 }
-
-#maincontainer{
-  height: 100vh;
-}
-#modeoflearning{
-  padding-top: 0 !important;
-}
